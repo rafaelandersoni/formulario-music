@@ -5,8 +5,8 @@
 ### Diferença entre GET e POST
 
 Os métodos **GET** e **POST** são utilizados para enviar informações de um formulário para um servidor, mas cada um possui uma finalidade diferente.
-
 * **GET:** envia os dados pela URL, deixando as informações visíveis na barra de endereços do navegador. É mais indicado para pesquisas, consultas e formulários que não utilizam informações confidenciais.
+  
 * **POST:** envia os dados no corpo da requisição (*body*), sem exibi-los na URL. Por isso, é o método mais recomendado para cadastros, logins e formulários que envolvem dados pessoais ou sensíveis.
 
 No meu formulário, utilizei o método **GET**, definido na tag `<form>` com `method="get"`, porque o objetivo é apenas coletar preferências musicais para fins de demonstração, sem o envio de informações confidenciais.
