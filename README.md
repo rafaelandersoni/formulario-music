@@ -4,27 +4,27 @@
 
 ### Diferença entre GET e POST
 
-Os métodos **GET** e **POST** são responsáveis por enviar os dados de um formulário para um servidor, mas cada um é utilizado em situações diferentes.
+Os métodos **GET** e **POST** são utilizados para enviar informações de um formulário para um servidor, mas cada um possui uma finalidade diferente.
 
-* **GET:** envia as informações pela URL, permitindo que os dados fiquem visíveis na barra de endereços do navegador. É indicado para pesquisas, consultas e formulários que não trabalham com informações sigilosas.
-* **POST:** envia os dados no corpo da requisição (*body*), sem que apareçam na URL. Por esse motivo, é o método mais utilizado em cadastros, logins e formulários que armazenam informações pessoais.
+* **GET:** envia os dados pela URL, deixando as informações visíveis na barra de endereços do navegador. É mais indicado para pesquisas, consultas e formulários que não utilizam informações confidenciais.
+* **POST:** envia os dados no corpo da requisição (*body*), sem exibi-los na URL. Por isso, é o método mais recomendado para cadastros, logins e formulários que envolvem dados pessoais ou sensíveis.
 
-Neste projeto, foi utilizado o método **GET**, pois o formulário tem apenas o objetivo de registrar preferências musicais, sem coletar dados que exijam maior segurança.
+No meu formulário, utilizei o método **GET**, definido na tag `<form>` com `method="get"`, porque o objetivo é apenas coletar preferências musicais para fins de demonstração, sem o envio de informações confidenciais.
 
-## Codificação
+### Codificação
 
-Para garantir a correta exibição dos caracteres especiais da língua portuguesa, o formulário utiliza a codificação **UTF-8**, definida pela seguinte linha de código:
+O formulário utiliza a codificação **UTF-8**, definida pela linha:
 
-```html id="m1g7ve"
-<meta charset="UTF-8">
-```
+`<meta charset="UTF-8">`
 
-Com essa configuração, caracteres como **á**, **é**, **ç** e **ã** são exibidos corretamente em diferentes navegadores e sistemas operacionais.
+Essa codificação garante que caracteres especiais da língua portuguesa, como **á, é, ç, ã**, além de emojis e outros símbolos, sejam exibidos corretamente no navegador.
 
 ## Reflexão
 
-O tema **"Sua Música Favorita"** foi escolhido por ser simples, familiar e de fácil compreensão. Dessa forma, qualquer pessoa consegue responder ao formulário de maneira rápida e intuitiva.
+Escolhi o tema **"Sua Música Favorita"** porque a música está presente no dia a dia da maioria das pessoas, tornando o formulário mais leve, interessante e fácil de responder.
 
-Durante o desenvolvimento, procurei organizar os campos de forma clara, mantendo uma estrutura simples e fácil de utilizar. Também busquei aplicar corretamente os conceitos estudados sobre formulários em HTML, tornando o projeto funcional e bem organizado.
+A escolha do método **GET** foi feita porque o formulário tem apenas a finalidade de coletar preferências musicais, sem solicitar informações pessoais ou sensíveis. Dessa forma, esse método atende perfeitamente ao objetivo da atividade.
 
-Como forma de aprimorar o projeto, seria interessante adicionar validações com **JavaScript** para verificar os dados antes do envio, melhorar ainda mais a responsividade em dispositivos móveis e incluir novos recursos que tornem a interação com o formulário mais prática e agradável para o usuário.
+Durante o desenvolvimento, precisei decidir entre utilizar os controles **select** e **radio**. Para a pergunta sobre a frequência com que a pessoa escuta música, escolhi o **select**, pois havia poucas opções e ele deixa o formulário mais organizado. Já para a escolha do gênero musical, utilizei o **radio**, porque o usuário deve selecionar apenas uma alternativa e todas as opções ficam visíveis, facilitando a escolha.
+
+Se tivesse mais tempo para aprimorar o projeto, adicionaria validações em **JavaScript** para melhorar a experiência do usuário, deixaria o formulário ainda mais responsivo para dispositivos móveis, incluiria mais opções de gêneros musicais e plataformas de streaming e faria com que o valor escolhido no controle deslizante (**range**) fosse exibido em tempo real.
