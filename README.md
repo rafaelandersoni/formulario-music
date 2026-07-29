@@ -4,29 +4,27 @@
 
 ### Diferença entre GET e POST
 
-Os métodos **GET** e **POST** são utilizados para enviar dados de um formulário para um servidor, porém possuem finalidades diferentes.
+Os métodos **GET** e **POST** são responsáveis por enviar os dados de um formulário para um servidor, mas cada um é utilizado em situações diferentes.
 
-* **GET:** envia os dados pela URL, tornando as informações visíveis na barra de endereços do navegador. É indicado para pesquisas, consultas e formulários que não lidam com dados confidenciais.
-* **POST:** envia os dados no corpo da requisição (*body*), sem exibi-los na URL. Por isso, é o método mais recomendado para cadastros, logins e formulários que envolvem informações pessoais ou sensíveis.
+* **GET:** envia as informações pela URL, permitindo que os dados fiquem visíveis na barra de endereços do navegador. É indicado para pesquisas, consultas e formulários que não trabalham com informações sigilosas.
+* **POST:** envia os dados no corpo da requisição (*body*), sem que apareçam na URL. Por esse motivo, é o método mais utilizado em cadastros, logins e formulários que armazenam informações pessoais.
 
-Neste projeto, foi utilizado o método **GET**, definido na tag `<form>` com `method="get"`, pois o formulário tem apenas a finalidade de coletar preferências musicais para fins de demonstração.
+Neste projeto, foi utilizado o método **GET**, pois o formulário tem apenas o objetivo de registrar preferências musicais, sem coletar dados que exijam maior segurança.
 
 ## Codificação
 
-O formulário utiliza a codificação **UTF-8**, definida pela linha:
+Para garantir a correta exibição dos caracteres especiais da língua portuguesa, o formulário utiliza a codificação **UTF-8**, definida pela seguinte linha de código:
 
-```html
+```html id="m1g7ve"
 <meta charset="UTF-8">
 ```
 
-Essa codificação garante a exibição correta de caracteres especiais da língua portuguesa, como **á, é, ç** e **ã**, além de suportar diversos outros símbolos e caracteres.
+Com essa configuração, caracteres como **á**, **é**, **ç** e **ã** são exibidos corretamente em diferentes navegadores e sistemas operacionais.
 
 ## Reflexão
 
-O tema **"Sua Música Favorita"** foi escolhido por ser simples, acessível e fazer parte do cotidiano da maioria das pessoas, tornando o formulário fácil de compreender e responder.
+O tema **"Sua Música Favorita"** foi escolhido por ser simples, familiar e de fácil compreensão. Dessa forma, qualquer pessoa consegue responder ao formulário de maneira rápida e intuitiva.
 
-O método **GET** foi adotado por atender às necessidades da atividade, já que o formulário não coleta informações pessoais ou dados sensíveis.
+Durante o desenvolvimento, procurei organizar os campos de forma clara, mantendo uma estrutura simples e fácil de utilizar. Também busquei aplicar corretamente os conceitos estudados sobre formulários em HTML, tornando o projeto funcional e bem organizado.
 
-Durante o desenvolvimento, o foco foi criar um formulário organizado, intuitivo e de fácil utilização, utilizando os elementos HTML adequados para cada tipo de informação solicitada.
-
-Como melhorias futuras, seria possível adicionar validações em **JavaScript** para verificar o preenchimento dos campos antes do envio, aprimorar a responsividade para diferentes dispositivos e incluir novas funcionalidades para tornar a experiência do usuário ainda melhor.
+Como forma de aprimorar o projeto, seria interessante adicionar validações com **JavaScript** para verificar os dados antes do envio, melhorar ainda mais a responsividade em dispositivos móveis e incluir novos recursos que tornem a interação com o formulário mais prática e agradável para o usuário.
