@@ -15,7 +15,7 @@ No meu formulário, utilizei o método **GET**, definido na tag `<form>` com `me
 
 O formulário utiliza a codificação **UTF-8**, definida pela linha:
 
-´<meta charset="UTF-8">`
+`<meta charset="UTF-8">`
 
 Essa codificação garante que caracteres especiais da língua portuguesa, como **á, é, ç, ã**, além de emojis e outros símbolos, sejam exibidos corretamente no navegador.
 
